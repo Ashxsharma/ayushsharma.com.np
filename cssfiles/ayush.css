@@ -306,11 +306,10 @@ img {
     border: 3px solid rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
     transform: rotateY(0deg); /* Ensure front starts correctly */
+    background-color: #0b0f4a; 
 }
 
-.card-front-web { background-image: url('images/web.jpg'); }
-.card-front-graphic { background-image: url('images/graph.jpg'); }
-.card-front-content { background-image: url('images/content.jpg'); }
+
 
 /* Back Faces - Content */
 .card-back {
@@ -321,10 +320,20 @@ img {
     padding: 30px;
 }
 
-.card-title {
+.card-title1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #e0e0e0;
     margin-bottom: 25px;
     text-align: center;
     border-bottom: 2px solid #ccc;
