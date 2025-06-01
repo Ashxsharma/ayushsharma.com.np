@@ -308,9 +308,9 @@ img {
     transform: rotateY(0deg); /* Ensure front starts correctly */
 }
 
-.card-front-web { background-image: url('images/web.png'); }
-.card-front-graphic { background-image: url('images/graph.png'); }
-.card-front-content { background-image: url('images/content.png'); }
+.card-front-web { background-image: url('images/web.jpg'); }
+.card-front-graphic { background-image: url('images/graph.jpg'); }
+.card-front-content { background-image: url('images/content.jpg'); }
 
 /* Back Faces - Content */
 .card-back {
