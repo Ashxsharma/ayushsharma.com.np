@@ -115,32 +115,35 @@ img {
 
 /* MOBILE KO LAGI */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+    .container {
+        
+        align-items: center; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
 
-  .main-menu {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    margin-top: 15px;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .main-menu.active {
-    display: flex;
-  }
+    .main-menu {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+    .main-menu.active {
+        display: flex;
+    }
 
-  .main-menu ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .main-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%; 
+        align-items: center; 
+    }
 }
-
 
 .hero {
   height: 100vh;
@@ -291,14 +294,20 @@ img {
 }
 
 .card-wrapper {
-    perspective: 1500px;
+    perspective: 1000px;
     display: flex;
     justify-content: center;
     /* Initial state for `in-view` animation */
     opacity: 0;
+    min-height: 200px;
     transform: translateY(50px);
+    position: relative;
+    z-index: 1;
+
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+
 
 .card-wrapper.in-view {
     opacity: 1;

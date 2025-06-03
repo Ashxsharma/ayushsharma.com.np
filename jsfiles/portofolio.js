@@ -28,12 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
 });
 
+/* banpauroti menu i guess */
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('main-menu');
 
-/* TOGGLING FOR MOBIL BUNPAUROTI */
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('main-menu');
 
+if (toggle && menu) {
   toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
   });
-
+}
