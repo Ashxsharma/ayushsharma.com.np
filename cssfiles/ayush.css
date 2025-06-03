@@ -47,6 +47,7 @@ img {
   align-items: center;
   max-width: 1200px;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -55,12 +56,13 @@ img {
   gap: 10px;
 }
 
-.logo1 {
+.logo1 img {
   width: 60px;
   transition: transform 0.5s ease-in-out;
+  border-radius: 50%;
 }
 
-.logo1:hover {
+.logo1 img:hover {
   transform: scale(0.9);
 }
 
@@ -79,20 +81,66 @@ img {
   100% { filter: hue-rotate(360deg); }
 }
 
+.main-menu {
+  display: flex;
+}
+
 .main-menu ul {
   display: flex;
   gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu a {
   font-weight: 600;
   padding: 10px 15px;
   transition: color 0.3s;
+  text-decoration: none;
+  color: white;
 }
 
 .main-menu a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color, #facc15);
 }
+
+/* BUN PAUROTI MENU */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE KO LAGI */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-menu {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .main-menu.active {
+    display: flex;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 .hero {
   height: 100vh;
