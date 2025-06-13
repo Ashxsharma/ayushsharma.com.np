@@ -475,15 +475,12 @@ ul li {
   align-items: center;
   width: 100%;
   background-color: #030303;
-  box-decoration-break: var(--dark-color);
 }
 
-/* Marquee wrapper with max width */
+/* Wrapper */
 .logo-marquee-wrapper {
   overflow: hidden;
   position: relative;
-
-
   background-color: #030303;
   width: 100%;
   max-width: 700px;
@@ -493,20 +490,22 @@ ul li {
   align-items: center;
 }
 
-/* Scrolling track */
+/* Track that scrolls */
 .logo-marquee-track {
   display: flex;
   animation: scrollMarquee 25s linear infinite;
+  width: max-content;
 }
 
-/* Group of logos that repeats */
+/* Group of logos */
 .logo-marquee-group {
   display: flex;
   gap: 50px;
   align-items: center;
+  flex-shrink: 0;
 }
 
-/* Each logo item */
+/* Logo item */
 .logo-item {
   display: flex;
   flex-direction: column;
@@ -516,21 +515,22 @@ ul li {
   font-weight: 600;
   min-width: 80px;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
-/* Logo images */
+/* Logo image */
 .logo-item img {
   width: 30px;
   height: 30px;
   margin-bottom: 8px;
 }
 
-/* Hover effect */
+/* Hover */
 .logo-item:hover {
   transform: scale(1.2);
 }
 
-/* ✨ Fancy edge blur with pseudo-elements */
+/* Blur effect */
 .logo-marquee-wrapper::before,
 .logo-marquee-wrapper::after {
   content: '';
@@ -542,20 +542,17 @@ ul li {
   pointer-events: none;
 }
 
-/* Left blur */
 .logo-marquee-wrapper::before {
   left: 0;
   background: linear-gradient(to right, #030303 0%, transparent 100%);
 }
 
-/* Right blur */
 .logo-marquee-wrapper::after {
   right: 0;
   background: linear-gradient(to left, #030303 0%, transparent 100%);
 }
 
-
-/* Infinite scrolling animation */
+/* Scroll animation */
 @keyframes scrollMarquee {
   0% {
     transform: translateX(0%);
@@ -565,13 +562,42 @@ ul li {
   }
 }
 
+/* 🔥 MOBILE RESPONSIVE TWEAKS */
+@media (max-width: 600px) {
+  .logo-marquee-wrapper {
+    padding: 20px 10px;
+  }
+
+  .logo-marquee-group {
+    gap: 30px;
+  }
+
+  .logo-item {
+    font-size: 12px;
+    min-width: 60px;
+  }
+
+  .logo-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo-item:hover {
+    transform: scale(1.1); /* Less aggressive on mobile */
+  }
+
+  .logo-marquee-wrapper::before,
+  .logo-marquee-wrapper::after {
+    width: 30px;
+  }
+}
 
 
 
 /* Import a dope bold font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
 
-/* Fullscreen Let's Talk Hero Section */
+/* Hero section layout */
 .hero-contact {
   height: 100vh;
   background-color: #030303;
@@ -582,19 +608,38 @@ ul li {
   text-align: center;
   gap: 40px;
   padding: 20px;
+
+  /* Hide on load */
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
 }
 
+.hero-contact.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Heading styles */
 .hero-contact h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(3rem, 8vw, 8rem); /* responsive BIG text */
+  font-size: clamp(3rem, 8vw, 8rem);
   font-weight: 900;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1.1;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
 }
 
-/* Social icons reused from before */
+.hero-contact.animate h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Social icons layout */
 .hero-contact .social-icons {
   display: flex;
   gap: 40px;
@@ -602,10 +647,31 @@ ul li {
   justify-content: center;
 }
 
+/* Icon images + hover effect */
 .hero-contact .social-icons a img {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Initial state */
+.hero-contact .social-icons a {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.hero-contact.animate .social-icons a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect */
+.hero-contact .social-icons a:hover img {
+  transform: scale(1.2);
+  
+}
+
 
 
 .footer {

@@ -128,3 +128,28 @@
             animatedElements.forEach(el => observer.observe(el));
 
         });
+
+     document.addEventListener("DOMContentLoaded", () => {
+    const section = document.querySelector('.hero-contact');
+    const heading = section.querySelector('h1');
+    const icons = section.querySelectorAll('.social-icons a');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add('animate');
+
+          // Add slight stagger to icons
+          icons.forEach((icon, i) => {
+            icon.style.transitionDelay = `${i * 150}ms`;
+          });
+
+          observer.unobserve(section); // Remove observer after animating once
+        }
+      });
+    }, {
+      threshold: 0.4
+    });
+
+    observer.observe(section);
+  });
