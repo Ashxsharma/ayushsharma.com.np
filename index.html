@@ -4,29 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <title>Ayush Sharma</title>
+    <title>Ayush Sharma - Developer & Designer</title>
     <link rel="stylesheet" href="cssfiles/ayush.css">
-    <link rel="stylesheet" href="cssfiles/animations.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="jsfiles/portofolio.js" defer></script>
-    <script src="jsfiles/animations.js" defer></script>
-   <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/XGUzAt/klaviyo.js?company_id=XGUzAt'></script>
-          <script type="text/javascript"> 
-          //Initialize Klaviyo object on page load
-          !function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}(); </script>
-
-    
 </head>
 <body>
-    <nav class="navbar">
+<nav class="navbar">
     <div class="container">
         <div class="logo">
             <div class="logo1">
-                <a href="ayush.html">
-                    <img src="images/ash.jpg" alt="logo" />
+                <a href="#home">
+                    <img src="images/ash.jpg" alt="Ayush Sharma Logo" />
                 </a>
             </div>
             <div class="logo-text">
@@ -34,169 +25,274 @@
             </div>
         </div>
 
-        <!-- Hamburger Toggle Button for Mobile -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
 
         <div class="main-menu" id="main-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="htmlfiles/about.html">About me</a></li>
-                <li><a href="htmlfiles/blogs.html">Blogs</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content hero-content-animated">
-                <h1 class="hero-heading">Hello, I'm <br> Ayush Sharma</h1>
-                <h1 class="hero-heading">
-                    <span class="typewriter"></span>
-                </h1>
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content">
+            <span class="hero-label">Available for Freelance</span>
+            <h1 class="hero-heading">
+                Hi, I'm <span class="highlight">Ayush</span><br>
+                Creative Developer & Designer
+            </h1>
+            <div class="typewriter-container">
+                <span class="typewriter"></span>
             </div>
-             <div class="hero-photo hero-photo-animated">
-                <img src="images/ashu.jpg" alt="ASH">
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about">
-        <div class="about-container">
-            <h2 class="about-heading reveal-text">A Little Bit About Me</h2>
-            <p class="about-paragraph reveal-text">
-                I'm a passionate web developer driven by a curiosity for new technologies and a commitment to crafting exceptional digital experiences. My journey in web development is all about transforming ideas into dynamic, user-friendly websites that are both functional and beautiful.
+            <p class="hero-description">
+                I craft pixel-perfect websites, design compelling visuals, and drive results through strategic email marketing. Let's transform your ideas into powerful digital experiences.
             </p>
-            <p class="about-paragraph reveal-text">
-                I thrive on learning and continuously refining my skills to stay at the forefront of the ever-evolving web landscape. Whether it's front-end polish or back-end logic, I love diving deep to create solutions that make an impact.
-            </p>
-            <p class="about-paragraph reveal-text call-to-action">
-                Let's build something amazing together!
-            </p>
-        </div>
-    </section>
-
-<section class="things-section">
-    <h2 class="section-heading reveal-text">My Expertise & Creations</h2>
-    <div class="things-grid">
-        <div class="card-wrapper animate-card">
-            <div class="card" data-card-id="1">
-                <div class="card-face card-front card-front-web">
-                    <h3 class="card-title">Web Development</h3>
-                    <p class="card-description">Crafting responsive, user-friendly websites that look great on any device.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                <a href="#expertise" class="btn btn-secondary">View My Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects</span>
                 </div>
-                <div class="card-face card-back card-back-web">
-                    <h3 class="card-title1">What I've Designed & Built</h3>
-                    <ul class="card-list">
-                        <li>Personal Portfolio Websites</li>
-                        <li>E-commerce Platforms (e.g., Bhaatkhau Concept)</li>
-                        <li>Dynamic Landing Pages</li>
-                    </ul>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years</span>
                 </div>
             </div>
         </div>
-
-        <div class="card-wrapper animate-card">
-            <div class="card" data-card-id="2">
-                <div class="card-face card-front card-front-graphic">
-                    <h3 class="card-title">Graphic Design</h3>
-                    <p class="card-description">Creating visually stunning graphics that communicate your brand's message effectively.</p>
-                </div>
-                <div class="card-face card-back card-back-graphic">
-                    <h3 class="card-title1">My Design Creations</h3>
-                    <ul class="card-list">
-                        <li>Engaging Social Media Posters</li>
-                        <li>Cohesive Brand Identity Kits</li>
-                        <li>Unique Logo Collections</li>
-                        <li>Eye-catching Infographics</li>
-                    </ul>
-                </div>
+        
+        <div class="hero-photo">
+            <div class="hero-photo-wrapper">
+                <img src="images/ashu.jpg" alt="Ayush Sharma">
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="card-wrapper animate-card">
-            <div class="card" data-card-id="3">
-                <div class="card-face card-front card-front-content">
-                    <h3 class="card-title">Content Creation</h3>
-                    <p class="card-description">Writing compelling content that captivates audiences and drives engagement.</p>
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="about-container">
+        <span class="section-label">About Me</span>
+        <h2 class="about-heading">Turning Vision Into Reality</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-paragraph">
+                    I'm a multi-disciplinary digital creator who believes that great design and clean code should work hand-in-hand. With a foundation in web development and an eye for aesthetics, I bridge the gap between technology and creativity.
+                </p>
+                <p class="about-paragraph">
+                    From developing responsive websites to crafting brand identities and executing targeted email campaigns, I bring a holistic approach to every project. My goal? To create digital solutions that not only look stunning but also deliver measurable results.
+                </p>
+                <p class="about-paragraph highlight">
+                    Let's collaborate and build something extraordinary that resonates with your audience and elevates your brand.
+                </p>
+            </div>
+            
+            <div class="about-image-grid">
+                <div class="about-img-wrapper">
+                    <div class="about-img-placeholder">Your Design Work<br/>Photo Here</div>
                 </div>
-                <div class="card-face card-back card-back-content">
-                    <h3 class="card-title1">What I Specialize In</h3>
-                    <ul class="card-list">
-                        <li>Compelling Blog Posts & Articles</li>
-                        <li>Creative Social Media Content</li>
-                        <li>Website Copywriting</li>
-                        <li>Digital Storytelling</li>
-                    </ul>
+                <div class="about-img-wrapper">
+                    <div class="about-img-placeholder">Your Workspace<br/>Photo Here</div>
+                </div>
+                <div class="about-img-wrapper large">
+                    <div class="about-img-placeholder">Your Creative Process Photo / Behind the Scenes</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- EXPERTISE SECTION -->
+<section class="expertise-section" id="expertise">
+    <div class="expertise-container">
+        <span class="section-label">What I Do</span>
+        <h2 class="expertise-heading">Expertise & Services</h2>
+        
+        <div class="cards-grid">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-face card-front">
+                        <div class="card-icon">💻</div>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-description">Building fast, responsive, and scalable websites that provide seamless user experiences across all devices.</p>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3 class="card-title-back">Development Services</h3>
+                        <ul class="card-list">
+                            <li>Custom Website Development</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Responsive Design Implementation</li>
+                            <li>Performance Optimization</li>
+                            <li>Progressive Web Apps</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-<section class="marqi">
- <div class="logo-marquee-wrapper">
-    <div class="logo-marquee-track">
-      <div class="logo-marquee-group">
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React.js</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"><span>Canva</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><span>Photoshop</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
-      </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-face card-front">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Graphic Design</h3>
+                        <p class="card-description">Creating visually compelling designs that communicate your brand's story and captivate your audience.</p>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3 class="card-title-back">Design Services</h3>
+                        <ul class="card-list">
+                            <li>Brand Identity Design</li>
+                            <li>Logo & Visual Identity</li>
+                            <li>Social Media Graphics</li>
+                            <li>Marketing Collateral</li>
+                            <li>UI/UX Design</li>
+                            <li>Print & Digital Assets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-      <!-- duplicate group for loop -->
-      <div class="logo-marquee-group">
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React.js</span></div>
-        <div class="logo-item"><img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub"><span>GitHub</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"><span>Canva</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><span>Photoshop</span></div>
-        <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
-      </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-face card-front">
+                        <div class="card-icon">📧</div>
+                        <h3 class="card-title">Email Marketing</h3>
+                        <p class="card-description">Designing and executing strategic email campaigns that engage subscribers and drive conversions.</p>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3 class="card-title-back">Marketing Services</h3>
+                        <ul class="card-list">
+                            <li>Email Campaign Strategy</li>
+                            <li>Newsletter Design</li>
+                            <li>Automation Workflows</li>
+                            <li>List Segmentation</li>
+                            <li>A/B Testing</li>
+                            <li>Analytics & Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  </section>
-
-  <!-- FULLSCREEN CONTACT SECTION -->
-<section class="hero-contact">
-  <h1>Let's Talk</h1>
-  <div class="social-icons">
-    <a href="https://github.com/Ashxsharma" target="_blank" title="GitHub">
-      <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub">
-    </a>
-    <a href="https://www.linkedin.com/in/AyushXsharma" target="_blank" title="LinkedIn">
-      <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="LinkedIn">
-    </a>
-    <a href="mailto:youremail@example.com" title="Email">
-      <img src="https://cdn-icons-png.flaticon.com/128/270/270021.png" alt="Email">
-    </a>
-    <a href="https://www.instagram.com/sharma.ashx" target="_blank" title="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram">
-    </a>
-  </div>
 </section>
 
-
-
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Ayush Sharma. All rights reserved.</p>
-            <p>Designed with passion and creativity.</p>
+<!-- PROCESS SECTION -->
+<section class="process-section" id="process">
+    <div class="process-container">
+        <span class="section-label">How I Work</span>
+        <h2 class="process-heading">My Creative Process</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Discovery</h3>
+                <p class="step-description">Understanding your goals, audience, and vision to create a solid foundation for the project.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Strategy</h3>
+                <p class="step-description">Developing a comprehensive plan that aligns design and functionality with your objectives.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Design</h3>
+                <p class="step-description">Crafting beautiful, intuitive designs that resonate with your brand and engage users.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Development</h3>
+                <p class="step-description">Building robust, scalable solutions with clean code and best practices.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <h3 class="step-title">Testing</h3>
+                <p class="step-description">Rigorous quality assurance to ensure everything works flawlessly across all platforms.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">6</div>
+                <h3 class="step-title">Launch</h3>
+                <p class="step-description">Deploying your project and providing ongoing support to ensure continued success.</p>
+            </div>
         </div>
-    </footer>
-    
-    
+    </div>
+</section>
+
+<!-- SKILLS MARQUEE -->
+<section class="skills-section">
+    <h2 class="skills-heading">Technologies & Tools</h2>
+    <div class="logo-marquee-wrapper">
+        <div class="logo-marquee-track">
+            <div class="logo-marquee-group">
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"><span>Canva</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><span>Photoshop</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+            </div>
+            <div class="logo-marquee-group">
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"><span>Canva</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><span>Photoshop</span></div>
+                <div class="logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <h1 class="contact-heading">LET'S TALK</h1>
+        <div class="social-icons">
+            <a href="https://github.com/Ashxsharma" target="_blank" title="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/AyushXsharma" target="_blank" title="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+            <a href="mailto:youremail@example.com" title="Email">
+                <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Email">
+            </a>
+            <a href="https://www.instagram.com/sharma.ashx" target="_blank" title="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Ayush Sharma. All rights reserved.</p>
+        <p>Crafted with passion, precision, and a lot of coffee ☕</p>
+    </div>
+</footer>
 </body>
 </html>
